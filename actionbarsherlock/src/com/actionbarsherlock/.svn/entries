@@ -1,0 +1,81 @@
+10
+
+dir
+4
+https://riouxsvn.com/svn/completelinuxin/actionbarsherlock/src/com/actionbarsherlock
+https://riouxsvn.com/svn/completelinuxin
+
+
+
+2014-03-08T12:55:13.840326Z
+4
+zacthespack
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d9dfa78a-ea47-4437-87d4-3c8d652b3929
+
+
+
+
+
+
+0
+
+ActionBarSherlock.java
+file
+
+
+
+
+2013-04-28T09:38:32.000000Z
+d98c53ca62da7797eb763139d54c1c55
+2014-03-08T12:55:13.840326Z
+4
+zacthespack
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30734
+
+app
+dir
+
+internal
+dir
+
+view
+dir
+
+widget
+dir
+

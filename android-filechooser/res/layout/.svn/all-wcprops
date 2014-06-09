@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/completelinuxin/!svn/ver/15/android-filechooser/res/layout
+END
+afc_file_chooser.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/completelinuxin/!svn/ver/15/android-filechooser/res/layout/afc_file_chooser.xml
+END
+afc_settings_sort_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/completelinuxin/!svn/ver/15/android-filechooser/res/layout/afc_settings_sort_view.xml
+END
+afc_context_menu_tiem.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/completelinuxin/!svn/ver/15/android-filechooser/res/layout/afc_context_menu_tiem.xml
+END
+afc_listview_files.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/completelinuxin/!svn/ver/15/android-filechooser/res/layout/afc_listview_files.xml
+END
+afc_view_locations_divider.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/completelinuxin/!svn/ver/15/android-filechooser/res/layout/afc_view_locations_divider.xml
+END
+afc_simple_text_input_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/completelinuxin/!svn/ver/15/android-filechooser/res/layout/afc_simple_text_input_view.xml
+END
+afc_button_location.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/completelinuxin/!svn/ver/15/android-filechooser/res/layout/afc_button_location.xml
+END
+afc_context_menu_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/completelinuxin/!svn/ver/15/android-filechooser/res/layout/afc_context_menu_view.xml
+END
+afc_gridview_files.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/completelinuxin/!svn/ver/15/android-filechooser/res/layout/afc_gridview_files.xml
+END
+afc_file_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/completelinuxin/!svn/ver/15/android-filechooser/res/layout/afc_file_item.xml
+END

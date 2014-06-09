@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/completelinuxin/!svn/ver/15/android-filechooser/src/group/pals/android/lib/ui/filechooser/services
+END
+FileProviderService.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/completelinuxin/!svn/ver/15/android-filechooser/src/group/pals/android/lib/ui/filechooser/services/FileProviderService.java
+END
+LocalFileProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/completelinuxin/!svn/ver/15/android-filechooser/src/group/pals/android/lib/ui/filechooser/services/LocalFileProvider.java
+END
+IFileProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/completelinuxin/!svn/ver/15/android-filechooser/src/group/pals/android/lib/ui/filechooser/services/IFileProvider.java
+END
