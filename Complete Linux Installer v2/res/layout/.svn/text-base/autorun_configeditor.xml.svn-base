@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" >
+
+	<Button
+	    android:id="@+id/btn_Back"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="5dp"
+	    android:text="@string/button_back" />
+<ScrollView
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/ScrollLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+<LinearLayout
+   		    xmlns:android="http://schemas.android.com/apk/res/android"
+   		    android:layout_width="fill_parent"
+   		    android:layout_height="wrap_content"
+   		    android:orientation="vertical" >
+<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/autorun_config_intro"
+			    android:textAppearance="?android:textAppearanceSmall" />
+<CheckBox
+			    android:id="@+id/chk_AutoRunOn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/autorun_config_checkbox_text" />
+<LinearLayout
+			    android:id="@+id/image_input_layout"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content" >
+<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="@string/autorun_config_label_text_image" />
+<EditText
+				    android:id="@+id/txt_AutoRunImageName"
+				    android:layout_width="0dip"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:ems="10" >
+
+				    <requestFocus />				</EditText>
+			</LinearLayout>
+</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

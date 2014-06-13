@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" >
+
+	<ScrollView
+	    android:id="@+id/ScrollLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+
+		<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content" android:text="@string/installGuide_Menu_Intro" android:layout_height="wrap_content" />
+			<Button android:id="@+id/btn_Ubuntu10Guide" android:text="@string/installGuide_Menu_Ubuntu10" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<Button android:id="@+id/btn_Ubuntu12Guide" android:text="@string/installGuide_Menu_Ubuntu12" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<Button android:id="@+id/btn_BacktrackGuide" android:text="@string/installGuide_Menu_Backtrack" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<Button android:id="@+id/btn_DebianGuide" android:text="@string/installGuide_Menu_Debian" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<Button android:id="@+id/btn_ArchLinuxGuide" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/installGuide_Menu_ArchLinux" />
+			<Button android:id="@+id/btn_FedoraGuide" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/installGuide_Menu_Fedora" />
+			<Button android:id="@+id/btn_KaliGuide" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/installGuide_Menu_Kali" />
+			
+			<Button android:id="@+id/btn_openSUSEGuide" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/installGuide_Menu_openSUSE" />
+
+		</LinearLayout>
+	</ScrollView>
+<ImageButton
+	    android:id="@+id/btn_donationad"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/donationad" />
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" >
+	<TextView
+	    android:id="@+id/lab_IntroText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/toolbox_TitleText"/>
+	<Spinner
+	    android:id="@+id/spn_Profiles"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" android:layout_below="@id/lab_IntroText"/>	<Button
+	    android:id="@+id/btn_StartLinux"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/spn_Profiles"
+	    android:text="@string/button_StartLinux" />
+	<Button
+	    android:id="@+id/btn_Config"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@id/spn_Profiles"
+	    android:text="@string/button_Configure" />
+	<ScrollView
+	    android:id="@+id/ScrollLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/btn_StartLinux" >
+	<TextView
+			    android:id="@+id/lab_launcher_bottom_text"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/Launcher_Intro" />
+	</ScrollView>
+	
+</RelativeLayout>

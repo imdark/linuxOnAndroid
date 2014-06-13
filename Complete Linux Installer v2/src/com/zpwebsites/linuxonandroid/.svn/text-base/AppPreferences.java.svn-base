@@ -1,0 +1,15 @@
+package com.zpwebsites.linuxonandroid;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+
+public class AppPreferences {
+    private static SharedPreferences sPreferences;
+    public static void init(Context context) {
+        sPreferences = context.getSharedPreferences("PrefFile", 0);
+    }
+
+    public static SharedPreferences getPrefs() {
+        return sPreferences;
+    }
+}

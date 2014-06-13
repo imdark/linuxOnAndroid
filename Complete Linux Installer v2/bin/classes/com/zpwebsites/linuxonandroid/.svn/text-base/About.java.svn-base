@@ -1,0 +1,21 @@
+package com.zpwebsites.linuxonandroid;
+
+import android.os.Bundle;
+
+
+
+public class About extends BaseActivity {
+	
+
+	public void onCreate(Bundle savedInstanceState) {
+        mTitleRes = R.string.frontpage_btn_about;
+
+		super.onCreate(savedInstanceState);
+
+		// set the Above View
+		setContentView(R.layout.about);
+		setSlidingActionBarEnabled(false);
+	}
+	
+	
+}

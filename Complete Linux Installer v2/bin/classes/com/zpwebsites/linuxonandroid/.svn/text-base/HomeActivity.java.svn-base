@@ -1,0 +1,409 @@
+package com.zpwebsites.linuxonandroid;
+
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Locale;
+
+import android.app.ProgressDialog;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.res.AssetManager;
+import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
+
+public class HomeActivity extends BaseActivity implements Runnable {
+		private static String	TAG		= "Complete Linux Installer";		// Used when logging as app name
+		private static String	NAME 	= "Splash";	
+		static final int		CHECK_LICENSE_REQUEST		= 1;
+
+		// The next 3 is the package names of the paid apps that now functions as donation files
+		private static final String			key1				= "com.zpwebsites.ubuntuinstallpaid";
+		private static final String			key2				= "com.zpwebsites.backtrackinstallguide";
+		private static final String			key3				= "com.zpwebsites.completelinuxinstaller";
+		private static final String			key4				= "com.zpwebsites.completelinuxindiegogo";
+		private static String				signatur			= null;
+
+	    private static final String			enc_signatur		= "19843E29AAA6327536DC17E73946CEC0C391FE16B3B0B6BF6F30B9F3EE7E2D384B96CD6CB1844AED35E4E79BFF8773098C881A96928BB5CFA384136FC80C13B68CAC785544F62EEB4FD03BF0240F461600D4626B84563B106F31E7D7641BBE3AABCBF640799BB16AC55A10077A759F8F9C67256F76EE4A13653CE0CB039B34FA219CE3100AD6BC2764FE296F0672A17196BEEE82E5875EB1FA9AAD73DDCFFB45AA27FD80BA81250EDE3AABC5A601B5F8DE12D37ED04F119D19E6DCB2FB702F18BF251B3B5B260FC685CB06D327A3B85EEBF0AE09EA1918D2DE879C17A50FEB9BB4229B841F61E6D338F7855CBCD17011B27E4EBF196488B3D9A213CA2969455414901FA3E607AC2D314BFC1AFD5619D06371F90FAD1A04B33BE497462CFBA0C9243DB597654E54DEFD18D5D80D41ADCFE49E9988A6268792565966E32FFED3D91327F7E24AF70B1D315286632C8F029397211472CD07E7000593D439C7841ACFCCC7D898AA7686F5037E8885EA3DC39037877AE46B39299A41B5D1602B227DCDC291C9CCBD39CD397E64D3161EA1C578037C251B774FD458FD99B797190026405A29FDF4208D1698CF29B0FABBBA62153C6A490291A1E8B8CE6C752454D226F6FB0669492B5F48541C5F11453D99EBC213E9B8D8904A9C92CBA11160A89EC3536457BCCE7619A0D6FAF194056079F35A3AF02F23AB9645A1357300B420A760D0F098E8CA76BB3087180BBE0E7BB74CB747A4285B9A4AD450FEEFEBB22C264EC31B4390930DB1E73C6A711FA949D9421B2F15474EED292AB0136DB003A81673E70094163E9FEFD5F71B0B0D2A3AD0FC5517C9C1863EE80C890BB907913FFF0E7D995856DB89E2A19E4E221010B7C2BB08EB19A4D60B8702A1A6D01AF89E5EA715E88902BDF91348F3164CBE0D038D00B19C2743D4D7035C6ADA440FFC4717DD8D782C078E8F23D82B7D919CF33D6998BAD56BCEC285DEE7B4D49037137C53D8EAB5C67E2E62AF3FF7D73DEA3656AB3EA00597AA6DFA20142CFD686A9491E2AF37652915367206C0F1227C3AECDBCF5B24586B57DF3514D9088E68F09CB2CE6083210E83BB3F6907CACEA5E65341D4155BE26CDEF5773E51BA650C5D51BC3010F5EDE11F50731C1AAE5DFE14795D149876C9522547EC49A30FF37E733B0D2982969DD8D43DA6052AE2F17D7BDE6F111CBAE7E27F51BBBD8130E93AE07A62FB7295BB23B2ECF326EAF8AD71FB559F362B30159CC4641C6F41528DFB0FC043576FD9EB3B494A0A130C2C70B2AC313399ED2330D83C4445C74784F2C2864C67444F10072B1098AE904E93B2D38CEEE808BC1B6E57A557DBB8B4DBD8E2FBF21F26AC6A77EB4E3C2956F42B9271330385EA72AF9D26DCCFA4405D406D0CD3EA4471E39C68B82522DE3A5C88CDDA63780A373EBCA2856FEE8CC0E26727F35E691D332AE4076BA3395559D837325FA9BEFC01F700A5EBBBA90BE90ACBAD3BC04E6D764EE26656D2C48D65847C0B08E9A2999709DCC3E19520D7B574827BD0F550EB8A2E9A489CAB4B9FBE23C9C0AAD3772F37EC82F9939C22CC41D583F708E47B0559A0FF58A85720BA1380825B54A696A12FBA9755600A0448272814BE71652460C5A984A67397F5809CFB4DAE0E1953F4CEB2D77CDB63FE81AD1DE03878E443859CC17C93A63A58FE59DCEF562572475685E24420F8AA19F2B617FEDC9D1A04DADABBFF03789F4DEE35B7F12FB5BA46D7290A7F7EFCB2761000174E2CFE97E2F4D761724CDDA5E1CE1610A60363DCBBF5B8342E7F7592A25BD113A4787958BB2E67AC65183270AAA152CDAFA18B6747401C0C394AEED3223E726DECFEBFC3E245ABAF7E4BF1F08D6B7DEA95FD4854D869AA517D4D1C0C988EE669EB97C57DAD900A5B66A97E7991651699425F9ADD4E6B49D3F62A5898AF7A307B3D0A95F12AB7C7DFD20B601B1C6F45CEF2EA69E037923E95C82A01EF539C0AE7301902680F76F7A2635934C3B02C39678175C37DFAF61BD7714E67965CED0DF70FB8C3B2ECC3E5F507776A8D057F463FBBB34828B51DE8504FE1AE7A0D9A46856D716F1168418313E3CABD8D95E2EABD258CC8D91672C9DFAD561524C510D1FC3F391BB3D5D5D622E9F511DCDF09C297CCBD9D4C597A5A68BC591D2598BF1FCE7AC4F3FEB483C46A8D5E7DE0369BD0DE7E5CAF787E352BD32F089AF1435CABDAA39E4426B343CDDF8A469FF19CEDF069A22B3082ABA176D747E5E3C15BC4EC1159F4689ACBCBBFCE89C56594487D77C5047FC2E780083077D02C5E79EADEF9A26B2EA52C540527936732FCB1A7391C1E3666BB9A74C9371128E12BB4CC280454EFA8A8E2566E33297A9D5297D82F1987F5206881A5E30E5CD716100C532796DEDE7362ABE7CD71F4312868E5276E9B42C15F3C8630F7FEC9E09474E5B21189221ED068F453C8AB5ED5AD93F75E0ED7D77A5212D4F2069F7F64";
+
+	    static boolean						keyChecked			= false;
+
+	    final Context context = this;
+		private ProgressDialog progressDialog;
+		//A thread, that will be used to execute code in parallel with the UI thread
+		private Thread thread;
+		//Create a Thread handler to queue code execution on a thread
+		private Handler handler;
+
+		//public static SharedPreferences sharedpreferences;
+		SharedPreferences.Editor editor;
+
+		public void onCreate(Bundle savedInstanceState) {
+			mTitleRes = R.string.app_name;
+			//Change to use singleton class for shared preferences object so other classes have access
+	    	//sharedpreferences = getSharedPreferences("PrefFile", MODE_PRIVATE); 
+			AppPreferences.init(this);
+	        editor = AppPreferences.getPrefs().edit();
+	    	super.onCreate(savedInstanceState);
+	        setContentView(R.layout.splash);
+	        
+	        setSlidingActionBarEnabled(false);
+	        
+			progressDialog = new ProgressDialog(HomeActivity.this);
+			progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+			progressDialog.setTitle("Running First Start");
+			progressDialog.setMessage("Installing Busybox");
+			progressDialog.setCancelable(false);
+			progressDialog.setIndeterminate(false);
+			progressDialog.setMax(100);
+			progressDialog.setProgress(0);
+			progressDialog.show();
+			//Initialize the handler
+	        handler = new Handler();
+	        //Initialize the thread
+	        thread = new Thread(this, "ProgressDialogThread");
+	        //start the thread
+	        thread.start();
+
+	        checkDonationFile();
+	    }
+
+		//Initialize a counter integer to zero
+		int counter = 0;
+
+		@Override
+		public void run()
+		{
+			try
+			{
+				synchronized (thread)
+				{
+					String outPath = "/data/data/" + this.getPackageName() + "/files/busybox";
+					File test = new File(outPath);
+					if (!test.exists()){
+						copyBusyBox();
+						handler.post(new Runnable()
+						{
+							@Override
+							public void run()
+							{
+								progressDialog.setMessage("Copying BootScript....");
+								progressDialog.setProgress(25);
+							}
+						});
+						thread.wait(1000);
+						copyScript();
+						handler.post(new Runnable()
+						{
+							@Override
+							public void run()
+							{
+								progressDialog.setMessage("Copying Auto BootScript....");
+								progressDialog.setProgress(50);
+							}
+						});
+						thread.wait(1000);
+						copyAutoBootScript();
+						handler.post(new Runnable()
+						{
+							@Override
+							public void run()
+							{
+								progressDialog.setMessage("Checking for Donaton key....");
+								progressDialog.setProgress(75);
+							}
+						});
+						thread.wait(1000);
+						@SuppressWarnings("unused")
+						SharedPreferences settings = this.getSharedPreferences("MyApp",0);
+
+						checkDonationFile();
+
+						handler.post(new Runnable()
+						{
+							@Override
+							public void run()
+							{
+								progressDialog.setMessage("Complete....");
+								progressDialog.setProgress(100);
+							}
+						});
+						thread.wait(1000);
+
+					}
+
+					// Wait until the donation key is checked, or we timeout!
+					int cnt = 0;
+					while (keyChecked == false) {
+						thread.wait(1000);
+						cnt++;
+						if (cnt > 20) {
+							break;
+						}
+					}
+
+			        Log.i(TAG, "Language = " + Locale.getDefault().getISO3Language());
+				}
+			}
+			catch (InterruptedException e)
+			{
+				e.printStackTrace();
+			}
+
+
+			//This works just like the onPostExecute method from the AsyncTask class
+			handler.post(new Runnable()
+			{
+				@Override
+				public void run()
+				{
+					progressDialog.dismiss();
+					toggle();
+			    	
+				}
+			});
+
+			//Try to "kill" the thread, by interrupting its execution
+			synchronized (thread)
+			{
+				thread.interrupt();
+			}
+		}
+
+		private void copyBusyBox() {
+			String outPath = "/data/data/" + this.getPackageName() + "/files";
+			File busyBox = new File(outPath + "/busybox");
+			File dir = new File(outPath);
+
+			if (busyBox.exists()) return;	// return if file already is copied
+			if (!dir.exists()) dir.mkdir(); // Create folder if not found
+
+			AssetManager assetManager = getAssets();
+			try {
+				InputStream in = assetManager.open("busybox");
+				FileOutputStream out = new FileOutputStream(busyBox);
+
+				byte[] buffer = new byte[1024];
+				int read;
+				while((read = in.read(buffer)) != -1){
+					out.write(buffer, 0, read);
+				}
+
+				in.close();
+				in = null;
+				out.flush();
+				out.close();
+				out = null;
+
+				Log.i(TAG, NAME + ": Busybox copied to " + outPath);
+
+				// Now the file is copied we chmod it so it can be executed
+				String script = "chmod 755 "+ outPath  + "/busybox\n";
+				runAsRoot(script);
+
+			} catch(Exception e) {
+				Log.e(TAG, NAME + ": " + e.getMessage());
+			}
+		}
+
+		private boolean checkSig(String packName) {
+			Log.i(TAG, NAME + ": Looking for " + packName);
+
+			PackageManager pm = getPackageManager();
+			try {
+				PackageInfo info = pm.getPackageInfo(packName, PackageManager.GET_SIGNATURES);
+				Signature[] sig = info.signatures;
+				String sigstring = new String(sig[0].toChars());
+
+				// Uncomment the line below to print the signature string to the logcat, you can then copy it from there for later use
+				// NOTE: "Cant load file!" below is actually the decryption password!
+				// 		 I use this string to fool a pirate into thinking it's just another message for the user! :)
+
+				// Log.e(TAG, NAME + ": Signature: " + sigstring);
+				try {
+					String enc = SimpleCrypto.encrypt("Cant load file!", sigstring);
+//					Log.e(TAG, NAME + ": Encrypted: " + enc);
+
+				} catch (Exception e) {
+				}
+				//delete this
+				return true;
+				/*
+				if (sigstring.equals(signatur)) {
+					Log.i(TAG, NAME + ": Found it and signature is valid.");
+					return true;
+				} else {
+					Log.i(TAG, NAME + ": Found it but signature is NOT valid!");
+					return false;
+				}*/
+
+			} catch (NameNotFoundException e) {
+				Log.i(TAG, NAME + ": Not found!");
+				return false;
+			}
+		}
+
+		@Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+			if (requestCode == CHECK_LICENSE_REQUEST) {
+				if (resultCode == RESULT_OK) {
+					editor.putBoolean("full", true);
+					editor.commit();
+					keyChecked = true;
+//					setContentView(R.layout.splash);
+
+					Log.i(TAG, NAME + ": Liense check success, running in full mode");
+
+				} else {
+					editor.putBoolean("full", false);
+					editor.commit();				
+					keyChecked = true;
+//					setContentView(R.layout.splash); // Here we can set another layout for free mode if we have to in the future
+
+					Log.i(TAG, NAME + ": License check failed, running in free mode");
+				}
+			}
+		}
+
+		public static boolean runAsRoot(String script) {
+			Process p;
+			try {
+				p = Runtime.getRuntime().exec("su"); 
+				DataOutputStream os = new DataOutputStream(p.getOutputStream());
+
+				os.writeBytes(script);
+				os.writeBytes("exit\n");
+				os.flush();
+
+				try {
+					p.waitFor();
+					if (p.exitValue() != 255) {
+						return true;
+					}
+					else {
+						return false;
+					}
+				} catch (InterruptedException e) {
+					return false;
+				}
+
+			} catch (IOException e) {
+				Log.e (TAG, NAME + ": runAsRoot error: " + e.getMessage());
+				return false;
+			}
+		}
+
+		private void copyAutoBootScript() {
+			String outPath = "/data/data/" + this.getPackageName() + "/files";
+			File script = new File(outPath + "/autobootscript.sh");
+
+			if (script.exists()) return;	// return if file already is copied
+
+			AssetManager assetManager = getAssets();
+			try {
+				InputStream in = assetManager.open("autobootscript.sh");
+				FileOutputStream out = new FileOutputStream(script);
+
+				byte[] buffer = new byte[1024];
+				int read;
+				while((read = in.read(buffer)) != -1){
+					out.write(buffer, 0, read);
+				}
+
+				in.close();
+				in = null;
+				out.flush();
+				out.close();
+				out = null;
+
+				Log.i(TAG, NAME + ": autobootscript.sh copied to " + outPath);
+
+			} catch(Exception e) {
+				Log.e(TAG, NAME + ": Error copying auto boot script! " + e.getMessage());
+			}
+		}
+
+		private void copyScript() {
+			String outPath = "/data/data/" + this.getPackageName() + "/files";
+			File script = new File(outPath + "/bootscript.sh");
+//			File dir = new File(outPath);
+
+			if (script.exists()) return;	// return if file already is copied
+//			if (!dir.exists()) dir.mkdir(); // Create folder if not found
+
+			AssetManager assetManager = getAssets();
+			try {
+				InputStream in = assetManager.open("bootscript.sh");
+				FileOutputStream out = new FileOutputStream(script);
+
+				byte[] buffer = new byte[1024];
+				int read;
+				while((read = in.read(buffer)) != -1){
+					out.write(buffer, 0, read);
+				}
+
+				in.close();
+				in = null;
+				out.flush();
+				out.close();
+				out = null;
+
+				Log.i(TAG, NAME + ": bootscript.sh copied to " + outPath);
+
+			} catch(Exception e) {
+				Log.e(TAG, NAME + ": Error copying boot script! " + e.getMessage());
+			}
+		}
+
+		private void checkDonationFile() {
+			// Decrypt the signature string
+			try {
+				// NOTE: "Cant load file!" below is actually the decryption password!
+				// 		 I use this string to fool a pirate into thinking it's just another message for the user! :)
+
+				String dec = SimpleCrypto.decrypt("Cant load file!", enc_signatur);
+				signatur = dec;
+
+			} catch (Exception e) {
+			}
+
+			// Look for a donation file
+			String donateFile = null;
+			if (checkSig(key1)) {
+				donateFile = key1;
+
+			} else if (checkSig(key2)) {
+				donateFile = key2;
+
+			} else if (checkSig(key3)) {
+				donateFile = key3;
+			} else if (checkSig(key4)) {
+				donateFile = key4;
+			}
+
+			// If a donation file was found and the signature is valid we launch it here, if not we set the free mode layout
+			if (donateFile != null) {
+				final Intent licenseIntent = new Intent("android.intent.action.MAIN");
+				licenseIntent.setComponent(new ComponentName(donateFile, donateFile + ".DonateFileActivity"));
+				licenseIntent.putExtra("caller", "app");
+
+				// NOTE: The extra below tells the donation file to show the ID to the logcat, should only be enabled in our personal versions!
+//				licenseIntent.putExtra("show_id", "yes");
+
+				startActivityForResult(licenseIntent, CHECK_LICENSE_REQUEST);
+
+			} else {
+				editor.putBoolean("full", false);
+				editor.commit();
+				keyChecked = true;
+			}
+		}
+	}

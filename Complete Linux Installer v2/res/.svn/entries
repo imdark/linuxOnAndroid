@@ -1,0 +1,107 @@
+10
+
+dir
+51
+https://riouxsvn.com/svn/completeinstall/Complete%20Linux%20Installer%20v2/res
+https://riouxsvn.com/svn/completeinstall
+
+
+
+2013-06-11T08:51:07.091042Z
+51
+zacthespack
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b28b05af-09a4-408d-a2b9-c648e6441e92
+
+
+
+
+
+
+0
+
+drawable
+dir
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+layout
+dir
+
+values
+dir
+
+values-da
+dir
+
+values-de
+dir
+
+values-es
+dir
+
+values-fi
+dir
+
+values-hu
+dir
+
+values-ko
+dir
+
+values-no
+dir
+
+values-pl
+dir
+
+values-pt
+dir
+
+values-ro
+dir
+
+values-ru
+dir
+
+values-tr
+dir
+
+values-uk
+dir
+
+values-v11
+dir
+
+values-v14
+dir
+
+values-zh
+dir
+
+xml
+dir
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+
+	<ScrollView
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/ScrollLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" >
+<TextView
+			    android:id="@+id/lab_BootIntro"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/updater_BootIntro" />
+<TextView
+			    android:id="@+id/lab_InstalledBoot"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/lab_BootIntro"
+			    android:text="@string/updater_Label_InstalledBoot" />
+<TextView android:id="@+id/txt_InstalledBoot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_toRightOf="@id/lab_InstalledBoot" android:layout_alignTop="@id/lab_InstalledBoot" android:layout_marginLeft="5dp"/>
+<TextView
+			    android:id="@+id/lab_OnlineBoot"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/updater_Label_OnlineBoot" android:layout_alignTop="@id/lab_InstalledBoot" android:layout_toRightOf="@id/txt_InstalledBoot" android:layout_marginLeft="10dp"/>
+<TextView android:id="@+id/txt_OnlineBoot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_toRightOf="@id/lab_OnlineBoot" android:layout_alignTop="@id/lab_InstalledBoot" android:layout_marginLeft="5dp"/>
+<Button
+			    android:id="@+id/btn_UpdateBootScript"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/txt_InstalledBoot"
+			    android:layout_centerHorizontal="true"
+			    android:layout_marginTop="5dp"
+			    android:text="@string/updater_btn_UpdateBootScript" />
+<TextView
+			    android:id="@+id/lab_AutoBootIntro"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/btn_UpdateBootScript"
+			    android:text="@string/updater_AutoBootIntro" android:layout_marginTop="5dp"/>
+<TextView
+			    android:id="@+id/lab_InstalledAutoBoot"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/lab_AutoBootIntro"
+			    android:text="@string/updater_Label_InstalledAutoBoot" />
+<TextView
+			    android:id="@+id/txt_InstalledAutoBoot"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="TextView" android:layout_alignTop="@id/lab_InstalledAutoBoot" android:layout_toRightOf="@id/lab_InstalledAutoBoot" android:layout_marginLeft="5dp"/>
+<TextView
+			    android:id="@+id/lab_OnlineAotoBoot"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/updater_Label_OnlineAutoBoot" android:layout_marginLeft="10dp" android:layout_alignTop="@id/lab_InstalledAutoBoot" android:layout_toRightOf="@id/txt_InstalledAutoBoot"/>
+<TextView
+			    android:id="@+id/txt_OnlineAutoBoot"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_toRightOf="@id/lab_OnlineAotoBoot"
+			    android:text="TextView" android:layout_marginLeft="5dp" android:layout_alignTop="@id/lab_InstalledAutoBoot"/>
+<Button
+			    android:id="@+id/btn_UpdateAutoBootScript"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/lab_InstalledAutoBoot"
+			    android:layout_centerHorizontal="true"
+			    android:layout_marginTop="5dp"
+			    android:text="@string/updater_btn_UpdateAutoBootScript" />
+</RelativeLayout>
+	</ScrollView>
+<Button	android:id="@+id/btn_Back" android:layout_marginBottom="5dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:text="@string/button_back" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

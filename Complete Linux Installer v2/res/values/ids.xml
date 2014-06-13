@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="title_container" />
+    <item type="id" name="title_logo" />
+    <item type="id" name="title_text" />
+    <item type="id" name="dialog_discard_confirm" />
+    <item type="id" name="dialog_moderator" />
+    <item type="id" name="dialog_wave" />
+    <item type="id" name="blocks_ruler" />
+    <item type="id" name="blocks_now" />
+    <item type="id" name="button1">false</item>
+    <item type="id" name="db1_root">false</item>
+    <item type="id" name="home_btn_feature1">false</item>
+    <item type="id" name="home_btn_feature2">false</item>
+    <item type="id" name="home_btn_feature3">false</item>
+    <item type="id" name="home_btn_feature4">false</item>
+    <item type="id" name="home_btn_feature5">false</item>
+    <item type="id" name="home_btn_feature6">false</item>
+    <item type="id" name="relativeLayout1">false</item>
+    <item type="id" name="nextbutton">false</item>
+    <item type="id" name="backbutton">false</item>
+    <item type="id" name="finishbutton">false</item>
+    <item type="id" name="button2">false</item>
+    <item type="id" name="button3">false</item>
+    <item type="id" name="info">false</item>
+    <item type="id" name="ubuntu800button">false</item>
+    <item type="id" name="ubuntu_button">false</item>
+    <item type="id" name="button1010">false</item>
+    <item type="id" name="button1204">false</item>
+    <item type="id" name="textView2">false</item>
+    <item type="id" name="scriptbutton">false</item>
+    <item type="id" name="downloadbutton">false</item>
+    <item type="id" name="downloadbuttonsm">false</item>
+    <item type="id" name="textView3">false</item>
+    <item type="id" name="vncbutton">false</item>
+    <item type="id" name="terminalbutton">false</item>
+    <item type="id" name="textView4">false</item>
+    <item type="id" name="button">false</item>
+    <item type="id" name="Corners">false</item>
+</resources>

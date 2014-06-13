@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/assets
+END
+busybox
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/assets/busybox
+END
+changelog-image.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/assets/changelog-image.txt
+END
+bootscript.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/assets/bootscript.sh
+END
+changelog-script.txt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/assets/changelog-script.txt
+END
+autobootscript.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/assets/autobootscript.sh
+END
+changelog-app.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/completeinstall/!svn/ver/53/Complete%20Linux%20Installer%20v2/assets/changelog-app.txt
+END

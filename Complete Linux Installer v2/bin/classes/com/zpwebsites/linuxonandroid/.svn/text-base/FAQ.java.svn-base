@@ -1,0 +1,32 @@
+package com.zpwebsites.linuxonandroid;
+
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class FAQ extends BaseActivity {
+
+	private Button		btn_WorkingDevices		= null;
+
+	public void onCreate(Bundle savedInstanceState) {
+		mTitleRes = R.string.frontpage_btn_FAQ;
+		super.onCreate(savedInstanceState);
+		setContentView (R.layout.faq);
+		setSlidingActionBarEnabled(false);
+
+		btn_WorkingDevices = (Button) findViewById(R.id.btn_WorkingDevices);
+		btn_WorkingDevices.setOnClickListener(btn_WorkingDevices_onClick);
+	}
+
+
+	private OnClickListener btn_WorkingDevices_onClick = new OnClickListener() {
+		public void onClick(View v) {
+			Intent intent = new Intent("android.intent.action.VIEW");
+			intent.setData(Uri.parse("http://linuxonandroid.org/working-devices/"));
+			startActivity(intent);
+		}
+	};
+}

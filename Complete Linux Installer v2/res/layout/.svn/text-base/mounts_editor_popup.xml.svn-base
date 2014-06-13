@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_root"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="10dp"
+	>
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="8sp" android:id="@+id/RelativeLayout1">
+
+        <TextView
+            android:id="@+id/label_androidPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/label_AndroidPath" />
+
+        <EditText
+            android:id="@+id/txt_AndroidPath"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/label_androidPath"
+            android:textColor="#FF111111" android:hint="@string/mounts_editor_popup_hint_android_path">
+
+            <requestFocus></requestFocus>
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="8sp" android:id="@+id/RelativeLayout2">
+
+        <TextView
+            android:id="@+id/label_LinuxPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/label_LinuxPath" />
+
+        <EditText
+            android:id="@+id/txt_LinuxPath"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/label_LinuxPath"
+            android:textColor="#FF111111" android:hint="@string/mounts_editor_popup_hint_linux_path">
+
+            <requestFocus></requestFocus>
+        </EditText>
+    </RelativeLayout>
+
+</LinearLayout>

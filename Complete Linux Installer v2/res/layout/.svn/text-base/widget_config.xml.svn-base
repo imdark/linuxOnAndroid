@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <TextView
+        android:id="@+id/lab_Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cfg_Label_ImagePath" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <Button
+            android:id="@+id/fileselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_ImagePath"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="..." />
+
+        <EditText
+            android:id="@+id/txt_ImagePath"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/fileselector"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_SaveConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cfg_widget_save" />
+
+    <TextView
+        android:id="@+id/lab_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cfg_Label_Description" />
+
+</LinearLayout>

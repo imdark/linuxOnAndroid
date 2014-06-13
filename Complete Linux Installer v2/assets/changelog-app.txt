@@ -1,0 +1,208 @@
+12/06/2014
+v2.8
+Final update to V2 before v3 release
+*No more ads! All ads have been removed
+*All features for free! Donation keys are no longer needed to access all the extra features, all features are free to use. Donation keys can still be bought to help support the project and its developers!
+*100% Open source - all source can now be viewed at: https://bitbucket.org/linuxonandroid/complete-linux-installer
+
+15/12/2013
+v2.7.2
+*Removed Location permissions, these where required by ad network but have disabled this option, READ_PHONE_STATE is still needed
+*Added indiegogo campaign to splash screen, please see http://www.indiegogo.com/projects/linuxonandroid/x/1111384 for more info and help support the project
+
+05/12/2013
+v2.7
+* Built against Android 4.4
+* Updated Debian Testing large ext4 image
+* Updated Kali Linux Full image (both ext4 and 2)
+* New ads added to app, for more information see: http://linuxonandroid.org/to-ad-or-not-to-ad-that-is-the-question/ Remember the donation key removes these!
+* Fedora 19 no longer in beta!
+* New Norwegian and Portuguese translations
+
+26/10/2013
+v2.6.1
+*New Ubuntu large images
+*New translations for: Chinese Simplified, German, Russian, Turkish and Ukrainian
+
+19/10/2013
+v2.6
+*Added 4.3 support with new bootscript and images 
+*Fixed side menu to small on high rez devices
+*New prompt to check with user before installing bootscripts and busybox
+*Experimental support for x86 devices
+*New updates images (see image change log)
+*Dropped Ubuntu 10.10 and 12.04 images from app and old Backtrack images, although still on source forge site
+*Removed translations as much has changed (will add new translations as they are created)
+
+16/06/2013
+v2.5.2
+*More bug fixes
+*Changed adbanner icon
+*Ad now go straight to new donation key
+*Added polish translation
+
+15/06/2013
+v2.5.1
+*Fixed crash when pressing 'open folder' in launcher and not having terminal installed
+*Other bug fixes for random crashes in app
+
+09/06/2013
+v2.5
+*New side menu library used - should fix all menu crashes
+*Added Romanian translation 
+*Fixed News page
+
+08/05/2013
+v2.4.1
+*Updated Chinese translation
+*Updated Danish translation
+*Updated Portuguese translation
+
+
+01/05/2013
+v2.4
+*New Hungarian translation
+*New Russian translation
+*New Turkish translation
+*Updated Norwegian translation
+
+11/04/2013
+v2.3.1
+*Added tip about changing screen size for VNC in Tips page
+*Added permission for SuperUser
+*Adjusted news layout
+*Widgets are now resizeable (Android 3.1 and up)
+*Updated translations for German, Spanish and Ukrainian
+
+30/03/2013
+v2.3
+*Fixed bug that downloaded wrong fedora torrent
+*Now building app against newest android version
+*Included Kali Linux beta image for donation key users
+*More force close fixes (thanks for the reports!)
+
+23/03/2013
+v2.2
+*Included Fedora beta images for donation key users
+*Removed Kickstarter widget, thank you to all those that donated!
+*Updated Translation for Portuguese, Ukrainian, German and Norwegian
+*Most force closes and crashes fixed!
+
+21/02/2013
+v2.1.1.1
+*Fixed crash on startup
+
+v2.1.1
+*Code cleaned up and some of the experience crashes/freezes should be fixed
+*Added kickstarter project to about page so you can keep track of progress!
+*Added kickstarter project to the splash screen. 
+
+10/02/2013
+v2.1
+*Improved side menu with smaller text and better icons
+*Fixed crashes when adding/editing images
+*Fixed donation keys not working
+*New Portuguese, Chinese translation 
+
+25/01/2013
+*First bug fix, should take care of alot of the crashing (possible not all)
+Please bear with us while we get to the route of these issues and iron out the new app.
+If you do get any more crashes do please send in a report and let us know what you where doing when it crashed.
+Thank you
+
+24/01/2013
+V2 Update!
+Huge reworking of the app from the ground app, everything is optimised and new features including:
+*Removed 'dashboard' UI in favour of a side opening menu to make switching between menu items much quicker
+*Tabs used in Install guides to make moving through the install process easier (you can also swipe from tab to tab)
+*New First 'boot' loading screen to give user information about what the app is doing on first boot, which stops freezing
+*New way of handling donation keys should stop the app from not seeing a key when its installed (keys DO NOT need updating)
+*Fixed ubuntu 10.10 linked to the wrong location
+*Moved News to AsyncTask to stop it freezing
+*Reworded All text to be easy to translate and fixed all grammar and spelling mistakes
+*New File Manager to select image file in launcher
+*Updated 1x1 widget to use file manager and improve its usability
+*New Finnish, Danish, Korean, Norwegian, Ukrainian, Spanish and German translations
+
+14/10/2012
+*Includes new danish translation
+*Change Ubuntu 10.10 links to there new location
+
+11/10/2012
+*Updated to include backtrack v10 image (See image change log)
+
+01/10/2012
+*Added French translation
+*Added support for the custom donation keys from the indiegogo device fund
+
+27/09/2012
+*Removed old outdated translations
+*Included new up to date Finnish and Italian translations
+*Added a busybox reinstall option in the launcher menu, this will allow users whos busybox install fails to be set to executable to reinstall busybox
+*Removed the device fund ad, we hit $600 and where able to get what we needed, thank you very much to all that donated
+
+27/08/2012
+*Changed news feed to our brand new website!
+*Added Popup on first launch about our Device Donation Fund! (http://www.indiegogo.com/Linuxonandroid)
+
+19/08/2012
+*Fixed Archlinux downloads pointing to Debian downloads(Arch torrents and large image shound now download fine)
+
+16/08/2012
+*Allow creation of 1GB SWAP file for Donation users (kernel must support it)
+*Added beta Archlinux images for Donation users (once out of beta will be avaible for all)
+
+23/07/2012
+*Added a popup window if the terminal app can not be found (the reason behind the app crashes when you try and launch linux)
+
+16/07/2012
+*Added 3 new buttons ready for future distros (have a look to see what the next distros will be ;) )
+*Removed the links to the donation at the end of the guides
+*Added small image 'ad' for the donation keys at the button of the install guides
+
+09/07/2012
+*New News section with a news feed right from the blog so you can keep up to date from within the app
+*Bulgarian Translation added, thanks to Nikolay Suknyarov (NikolayS)
+*Added links to donation keys at the end of the install guides (in free mode only)
+
+03/07/2012
+*Complete Linux Installer now free with 'donation' key apps
+*App now checks for donation key and unlocks extra features if found (and passes validation)
+*Extra features currently include Linux editor (to change screen size and mounts etc.)
+
+11/06/2012
+*Added a config screen on the launcher.
+*Added a mount editor to the config screen where new mounts can be added.
+*Added a option to turn on/off start of SSH and VNC servers.
+*Added resolution settings to the config screen.
+*Added auto run options, the image can now be mounted automatically when android has booted.
+*Added Danish translations.
+*The launcher now warn you if the image path is wrong and hide the config and start button.
+*Changed the widgets and launcher to use a full image name instead of the path and script name.
+*Fixed grammar and spelling for English text
+*Added torrent downloads for debian and backtrack
+
+07/05/2012
+*Complete rebuild of app (looks the same but will make updates and change ALOT easier to implement)
+
+03/05/2012
+*Added torrent links and uploaded 1204 images to v2 and boot script to v7
+*Added built in busybox so no longer need to install it yourself! (only working with 1204 v7 boot script, will work with other distros in next update)
+*New changelog viewer, not much to see but it will be much easier updating it in the future.
+
+20/04/2012
+*Install guide updated to reflect the new Ubuntu images, and the fact that Ubuntu 12.04 is now stable
+*Launch button and widgets updated to reflect the changes made in the terminal app (fixed bug that stopped widgets from working)
+
+13/04/2012
+*New onclick boot system that lets you set the location of your image file and boot script (so it no longer has to be in sdcard/ubuntu etc.).
+*Brand new widgets that also let you set the location of your files
+The new boot system was design by Martin Møller who kindly donated it to the project.
+
+31/03/2012
+*Includes install guide for Debian
+*One click boot for Debian
+*Boot widgets still not working will be fixed in next release
+
+30/03/2012
+*First release featuring all the features of the paid backtrack and ubuntu apps

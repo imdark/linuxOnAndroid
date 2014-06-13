@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_root"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="10dp"
+	>
+
+    <RelativeLayout android:layout_alignBaseline="@+id/layout_root" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="8sp" android:id="@+id/RelativeLayout1">
+        <TextView
+            android:id="@+id/label_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inputLabel_Name"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/txt_LinuxName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/label_Name"
+            android:hint="@string/hint_EnterName"
+            android:textColor="#FF111111" >
+
+            
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/layout_root"
+        android:layout_marginTop="8sp" >
+
+        <TextView
+            android:id="@+id/label_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/launcher_Label_ImageName" />
+
+        <EditText
+            android:id="@+id/txt_ImageName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/fileselector"
+            android:layout_toRightOf="@id/label_Image"
+            android:textColor="#FF111111" >
+
+            
+        </EditText>
+
+        <Button
+            android:id="@+id/fileselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_ImageName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="..." />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_DismissChanges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/button_mounts_abort_changes" />
+
+        <Button
+            android:id="@+id/btn_SaveAndExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button1"
+            android:text="@string/button_SaveAndExit" />
+
+    </RelativeLayout>
+
+</LinearLayout>

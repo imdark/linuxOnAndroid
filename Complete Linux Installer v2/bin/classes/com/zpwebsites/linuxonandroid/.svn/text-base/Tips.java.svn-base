@@ -1,0 +1,16 @@
+package com.zpwebsites.linuxonandroid;
+
+import android.os.Bundle;
+
+public class Tips extends BaseActivity {
+
+	public void onCreate(Bundle paramBundle) {
+		mTitleRes = R.string.frontpage_btn_Tips;
+		super.onCreate(paramBundle);
+		setContentView(R.layout.tips);
+		setSlidingActionBarEnabled(false);
+
+	}
+
+
+}

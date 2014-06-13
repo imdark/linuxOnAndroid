@@ -1,0 +1,365 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout
+END
+file_list_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/file_list_row.xml
+END
+install_ubuntu10_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_ubuntu10_1.xml
+END
+beta_popup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/beta_popup.xml
+END
+changelog_viewer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/changelog_viewer.xml
+END
+install_ubuntu10_2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_ubuntu10_2.xml
+END
+widget_config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/widget_config.xml
+END
+install_ubuntu10_3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_ubuntu10_3.xml
+END
+install_ubuntu12_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_ubuntu12_1.xml
+END
+mounts_list_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/mounts_list_row.xml
+END
+install_ubuntu10_4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_ubuntu10_4.xml
+END
+install_ubuntu12_2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_ubuntu12_2.xml
+END
+install_ubuntu12_3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_ubuntu12_3.xml
+END
+install_ubuntu12_4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_ubuntu12_4.xml
+END
+dialog_download_type_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/dialog_download_type_selector.xml
+END
+configure.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/configure.xml
+END
+splash.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/splash.xml
+END
+comingsoon_popup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/comingsoon_popup.xml
+END
+install_kali_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_kali_1.xml
+END
+widgetm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/widgetm.xml
+END
+changelog_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/changelog_menu.xml
+END
+install_kali_2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_kali_2.xml
+END
+install_kali_3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_kali_3.xml
+END
+install_archlinux_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_archlinux_1.xml
+END
+install_kali_4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_kali_4.xml
+END
+installguides_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/installguides_menu.xml
+END
+popup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/popup.xml
+END
+install_archlinux_2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_archlinux_2.xml
+END
+download_fedora_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/download_fedora_menu.xml
+END
+install_archlinux_3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_archlinux_3.xml
+END
+install_archlinux_4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_archlinux_4.xml
+END
+download_arch_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/download_arch_menu.xml
+END
+download_debian_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/download_debian_menu.xml
+END
+launch.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/launch.xml
+END
+distro_editor_popup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/distro_editor_popup.xml
+END
+tips.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/tips.xml
+END
+download_ubuntu12_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/download_ubuntu12_menu.xml
+END
+mounts_editor_popup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/mounts_editor_popup.xml
+END
+download_ubuntu10_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/download_ubuntu10_menu.xml
+END
+widget.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/widget.xml
+END
+simple_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/simple_list_item.xml
+END
+install_debian_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_debian_1.xml
+END
+install_debian_2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_debian_2.xml
+END
+about.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/about.xml
+END
+install_debian_3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_debian_3.xml
+END
+menu_frame.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/menu_frame.xml
+END
+install_debian_4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_debian_4.xml
+END
+install_fedora_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_fedora_1.xml
+END
+install_fedora_2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_fedora_2.xml
+END
+fragment_tabs_pager.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/fragment_tabs_pager.xml
+END
+install_fedora_3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_fedora_3.xml
+END
+autorun_configeditor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/autorun_configeditor.xml
+END
+install_backtrack_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_backtrack_1.xml
+END
+install_fedora_4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_fedora_4.xml
+END
+mounts_editor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/mounts_editor.xml
+END
+install_backtrack_2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_backtrack_2.xml
+END
+news.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/news.xml
+END
+install_backtrack_3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_backtrack_3.xml
+END
+install_backtrack_4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/install_backtrack_4.xml
+END
+script_updater.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/script_updater.xml
+END
+faq.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/completeinstall/!svn/ver/51/Complete%20Linux%20Installer%20v2/res/layout/faq.xml
+END
