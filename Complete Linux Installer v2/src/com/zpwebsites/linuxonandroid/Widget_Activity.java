@@ -16,7 +16,6 @@
 
 package com.zpwebsites.linuxonandroid;
 
-
 import group.pals.android.lib.ui.filechooser.FileChooserActivity;
 import group.pals.android.lib.ui.filechooser.io.localfile.LocalFile;
 import group.pals.android.lib.ui.filechooser.services.IFileProvider;
@@ -79,7 +78,6 @@ public class Widget_Activity extends Activity {
 						cmdString += CFG.busyBoxPath + " chroot " + CFG.MNT + " /root/init.sh " + mountedImage + "\n";
 
 						Intent intent = new Intent(Intent.ACTION_MAIN);
-						intent.setComponent(new ComponentName("jackpal.androidterm", "jackpal.androidterm.RemoteInterface"));
 						intent.setAction("jackpal.androidterm.RUN_SCRIPT");
 						intent.putExtra("jackpal.androidterm.iInitialCommand", cmdString);
 						startActivity(intent);
@@ -151,7 +149,6 @@ public class Widget_Activity extends Activity {
 		cmdString += "sh " + CFG.scriptPath + " " + image_Name;
 
 		Intent intent = new Intent(Intent.ACTION_MAIN);
-		intent.setComponent(new ComponentName("jackpal.androidterm", "jackpal.androidterm.RemoteInterface"));
 		intent.setAction("jackpal.androidterm.RUN_SCRIPT");
 		intent.putExtra("jackpal.androidterm.iInitialCommand", cmdString);
 		startActivity(intent);
